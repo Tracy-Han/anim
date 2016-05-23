@@ -1,0 +1,96 @@
+\newcommand{\parsig}[1]{(Proc. of ACM
+  SIGGRAPH~#1)}\newcommand{\parsiga}[1]{(Proc. of ACM SIGGRAPH Asia~#1)}
+\begin{thebibliography}{15}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+
+\bibitem[Airey(1990)]{Airey90}
+\textsc{Airey, J.~M.} 1990.
+\newblock {\em Increasing update rates in the building walkthrough system with
+  automatic model-space subdivision and potentially visible set calculations}.
+\newblock PhD thesis, UNC-CH.
+
+\bibitem[Akeley et~al.(1990)Akeley, Haeberli, and Burns]{Akeley90}
+\textsc{Akeley, K.}, \textsc{Haeberli, P.}, and \textsc{Burns, D.} 1990.
+\newblock The tomesh.c program. Available on SGI computers and developers
+  toolbox CD.
+
+\bibitem[Bittner et~al.(2004)Bittner, Wimmer, and Harald~Piringer]{Bittner04}
+\textsc{Bittner, J.}, \textsc{Wimmer, M.}, and \textsc{Harald~Piringer, W.~P.}
+  2004.
+\newblock Coherent hierarchical culling: Hardware occlusion queries made
+  useful.
+\newblock {\em Computer Graphics Forum}, 23\penalty0 (3):\penalty0 615--624.
+
+\bibitem[Chen et~al.(2012)Chen, Sander, Nehab, Yang, and Hu]{Chen12}
+\textsc{Chen, G.}, \textsc{Sander, P.~V.}, \textsc{Nehab, D.}, \textsc{Yang,
+  L.}, and \textsc{Hu, L.} 2012.
+\newblock Depth-presorted triangle lists.
+\newblock {\em ACM Transactions on Graphics \parsiga{2012}}, 31\penalty0
+  (6):\penalty0 160:1--160:9.
+
+\bibitem[Chow(1997)]{Chow97}
+\textsc{Chow, M.~M.} 1997.
+\newblock Optimized geometry compression for real-time rendering.
+\newblock In {\em Visualization'97},  347--354, 559.
+
+\bibitem[Deering(1995)]{Deering95}
+\textsc{Deering, M.} 1995.
+\newblock Geometry compression.
+\newblock In {\em Proc. of ACM SIGGRAPH~{95}},  13--20.
+
+\bibitem[Govindaraju et~al.(2005)Govindaraju, Henson, Lin, and
+  Manocha]{Govindaraju05}
+\textsc{Govindaraju, N.~K.}, \textsc{Henson, M.}, \textsc{Lin, M.~C.}, and
+  \textsc{Manocha, D.} 2005.
+\newblock Interactive visibility ordering and transparency computations among
+  geometric primitives in complex environments.
+\newblock In {\em I3D},  49--56.
+
+\bibitem[Greene et~al.(1993)Greene, Kass, and Miller]{Greene93}
+\textsc{Greene, N.}, \textsc{Kass, M.}, and \textsc{Miller, G.} 1993.
+\newblock Hierarchical z-buffer visibility.
+\newblock In {\em Proc. of ACM SIGGRAPH~{93}},  231--238.
+
+\bibitem[Hillesland et~al.(2002)Hillesland, A., D., and Manocha]{Hillesland02}
+\textsc{Hillesland, K.}, \textsc{A., B.~S.}, \textsc{D., L.}, and
+  \textsc{Manocha.} 2002.
+\newblock Fast and simple occlusion culling using hardware-based depth queries.
+\newblock Technical Report TR02-039, Department of Computer Science, UNC-CH.
+
+\bibitem[Hoppe(1999)]{Hoppe99}
+\textsc{Hoppe, H.} 1999.
+\newblock Optimization of mesh locality for transparent vertex caching.
+\newblock In {\em Proc. of ACM SIGGRAPH~{99}},  269--276.
+
+\bibitem[Lin and Yu(2006)]{Lin06}
+\textsc{Lin, G.} and \textsc{Yu, T. P.-Y.} 2006.
+\newblock An improved vertex caching scheme for 3d mesh rendering.
+\newblock {\em TVCG}, 12\penalty0 (4):\penalty0 640--648.
+
+\bibitem[MacQueen(1967)]{MacQueen67}
+\textsc{MacQueen, J.} 1967.
+\newblock Some methods for classification and analysis of multivariate
+  observations.
+\newblock In {\em Proceedings of the Fifth Berkeley Symposium on Mathematical
+  Statistics and Probability, Volume 1: Statistics},  281--297.
+
+\bibitem[Nehab et~al.(2006)Nehab, Barczak, and Sander]{Nehab06}
+\textsc{Nehab, D.}, \textsc{Barczak, J.}, and \textsc{Sander, P.~V.} 2006.
+\newblock Triangle order optimization for graphics hardware computation
+  culling.
+\newblock In {\em I3D},  207--211.
+
+\bibitem[Sander et~al.(2007)Sander, Nehab, and Barczak]{Sander07}
+\textsc{Sander, P.~V.}, \textsc{Nehab, D.}, and \textsc{Barczak, J.} 2007.
+\newblock Fast triangle reordering for vertex locality and reduced overdraw.
+\newblock {\em ACM Transactions on Graphics \parsig{2007}}, 26\penalty0
+  (3):\penalty0 89.
+
+\bibitem[Teller and S�quin(1991)]{Teller91}
+\textsc{Teller, S.~J.} and \textsc{S�quin, C.~H.} 1991.
+\newblock Visibility preprocessing for interactive walkthroughs.
+\newblock In {\em Proc. of ACM SIGGRAPH~{91}},  61--70.
+
+\end{thebibliography}

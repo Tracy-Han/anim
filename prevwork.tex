@@ -1,0 +1,13 @@
+\section{Related work}
+\label{sec:prevwork}
+
+\paragraph{Vertex caching}
+Vertex cache optimization has been extensively researched.
+Early techniques made advances by reducing bandwidth and generating compressed data structures, such as triangle strips (e.g., ~\cite{Akeley90, Deering95, Chow97}).
+More recent methods simply utilize the transparent caching provided by modern GPUs and just reorder the triangles without
+further compressing the index buffer (e.g.,~\cite{Hoppe99, Lin06, Sander07}). These approaches directly target the post-transform cache, where most of the vertex
+processing gain can be achieved. In this paper, we do not propose new methods for improving cache efficiency, but rather directly employ the method of~\cite{Sander07} to generate mesh patches with low ACMR. We later use these patches in our algorithm 
+to create orders that reduce OVR over entire animation sequences.
+
+\paragraph{Overdraw}
+ A popular strategy to reduce overdraw of fill-bound scenes is to prime the Z-buffer by rendering the geometry without writing to the framebuffer. On a subsequent pass, the geometry is rendered again, but this time writing to the framebuffer and using a {\em less than or equal} depth test. This approach ensures that only the visible fragments are shaded. Note, however, that it doubles the amount of vertex processing, which could be unacceptable in many scenarios. Alternative ways to reduce overdraw include visibility sorting and occlusion culling (e.g.,~\cite{Airey90, Teller91, Greene93}). Some techniques use hardware-based occlusion queries (e.g.,~\cite{Hillesland02, Bittner04, Govindaraju05}). Most of these methods either operate at coarser levels, or require fine-granular visibility sorting. \cite{Nehab06} and \cite{Sander07} take an alternative approach of creating a single index buffer with a view-independent order that is optimized to reduce overdraw. The approach is completely transparent to the application, which simply directly renders this pre-sorted buffer. \cite{Chen12} creates  set of buffers that guarantee front-to-back order by duplicating triangles in the index buffer and selectively drawing these triangles based on a shader test so as to guarantee that the order of the rendered triangles is correct. While these techniques provide good results for static meshes, they do not address animated scenes. Our proposed technique addresses this problem by jointly clustering sets of animation key frames and viewpoints that can share the same index buffer. 
